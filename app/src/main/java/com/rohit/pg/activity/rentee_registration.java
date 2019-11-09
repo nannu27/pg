@@ -141,7 +141,6 @@ public class rentee_registration extends AppCompatActivity {
             });
         }
 
-
         clear_function();
         //taking permission and image button funtinality
        id_button.setOnClickListener(new View.OnClickListener() {
@@ -158,9 +157,7 @@ public class rentee_registration extends AppCompatActivity {
                }
            }
        });
-
-
-
+       //gemder
         gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -191,7 +188,7 @@ public class rentee_registration extends AppCompatActivity {
                 renti_parents_mobile = parents_mobile.getText().toString();
                 renti_ocuupation = occupation.getText().toString().trim();
                 renti_permanent_address = permanent_address.getText().toString().trim();
-                renti_work_address = working_address.toString().trim();
+                renti_work_address = working_address.getText().toString().trim();
                 renti_pg_name = pg_name.getText().toString().trim();
                 renti_bed_number = bed_number.getText().toString().trim();
                 renti_room_name = room_name.getText().toString().trim();

@@ -38,23 +38,16 @@ public class update_data extends AppCompatActivity {
     ImageView id_proof,back;
     private static int RESULT_LOAD_IMAGE_ID = 1;
     private static final int PERMISSION_REQUEST_CODE = 1;
-
     DataBaseHelper dataBaseHelper;
-
     byte[] id_image;
     String picpath_profile;
-
-
     String renti_fname,renti_lname,renti_gender = "male",renti_father_name, renti_ocuupation,renti_permanent_address,renti_work_address,renti_pg_name,renti_room_name,renti_bed_number;
     String renti_mobile,renti_parents_mobile,renti_whatsapp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_data);
-
         dataBaseHelper = new DataBaseHelper(this);
-
         //edit Text
         fname = findViewById(R.id.renti_fname);
         lname = findViewById(R.id.renti_lastname);
@@ -68,26 +61,21 @@ public class update_data extends AppCompatActivity {
         pg_name = findViewById(R.id.renti_pg_name);
         room_name = findViewById(R.id.renti_room_number);
         bed_number = findViewById(R.id.renti_bed_number);
-
         //buttons
         update_button = findViewById(R.id.renti_update);
         clear_button = findViewById(R.id.renti_clear);
         id_button = findViewById(R.id.renti_id_button);
-
         //checkBoxes
         male = findViewById(R.id.renti_male_gender);
         female = findViewById(R.id.renti_fmale_gender);
         gender = findViewById(R.id.renti_gender);
-
         //image_view
         id_proof = findViewById(R.id.renti_profile);
         back = findViewById(R.id.back);
-
         Intent i = getIntent();
         Bundle b = i.getExtras();
         if(b != null)
         {
-
             String fname1 = (String) b.get("fname");
             String lname1 = (String) b.get("lname");
             final String gender1 = (String) b.get("gender");
@@ -102,7 +90,6 @@ public class update_data extends AppCompatActivity {
             String room1 = (String) b.get("room");
             String bed1 = (String) b.get("bed");
             byte[] id_img = (byte[]) b.get("id_img");
-
             father_name.setText(father1);
             mobile.setText(pnone1);
             whatsapp_number1.setText(w_phone1);

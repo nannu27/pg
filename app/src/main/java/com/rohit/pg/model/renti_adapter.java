@@ -23,22 +23,26 @@ public class renti_adapter extends BaseAdapter {
 
 
     @Override
-    public int getCount() {
+    public int getCount()
+    {
         return renti_List.size();
     }
 
     @Override
-    public Object getItem(int i) {
+    public Object getItem(int i)
+    {
         return renti_List.get(i);
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId(int i)
+    {
         return i;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int i, View view, ViewGroup viewGroup)
+    {
         return null;
     }
 

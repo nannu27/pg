@@ -1,5 +1,6 @@
 package com.rohit.pg.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,12 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 import com.rohit.pg.R;
 import com.rohit.pg.sql.DataBaseHelper;
 
-public class registration extends AppCompatActivity {
+public class registration extends Activity {
 
     Button login, registration;
     EditText edit_user,edit_pass,edit_cpass,edit_email;

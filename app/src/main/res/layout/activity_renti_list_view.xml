@@ -49,6 +49,14 @@
             android:layout_margin="10dp"
             android:src="@drawable/ic_delete_black_24dp" />
 
+        <Spinner
+            android:id="@+id/option"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/rename" />
+
+
     </LinearLayout>
 
     <ListView

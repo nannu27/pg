@@ -14,12 +14,10 @@
         android:layout_marginTop="50dp"
         android:orientation="vertical"
         android:gravity="center">
-
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_hotel_key"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,14 +74,31 @@
                android:id="@+id/login"
                android:background="@color/colorPrimary"
                android:text="@string/login" />
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/keeplogin"
+               android:text="keep login"/>
 
-           <Button
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:layout_marginTop="30dp"
+           android:orientation="horizontal">
+
+           <TextView
                android:layout_width="200dp"
-               android:layout_marginLeft="5dp"
                android:layout_height="wrap_content"
                android:id="@+id/registration"
-               android:background="@color/colorPrimary"
-               android:text="@string/redirect_to_registration" />
+               android:textColor="#248CDF"
+               android:text="go to registration" />
+
+
 
        </LinearLayout>
 

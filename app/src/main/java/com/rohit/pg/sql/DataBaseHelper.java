@@ -100,8 +100,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return false;
         }
     }
-
-
     public boolean delete(String fname,String lname,String phone,String w_phone)
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -115,7 +113,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return true;
         }
     }
-
     public boolean insert_rentee(String firt_name, String last_name, String gender, String father_name, String mobile,String whatsapp_mobile, String p_mobile, String ocupation,
                                  String permanent_address, String working_address, String pg_number, String room_number, String bed_number,
                                  byte[] id_image)
@@ -199,14 +196,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                String p_mobile = cursor.getString(6);
                String occupation = cursor.getString(7);
                String permanent_add = cursor.getString(8);
+
                String working_add = cursor.getString(9);
                String pg_num = cursor.getString(10);
                String room_num = cursor.getString(11);
                String bed_num = cursor.getString(12);
                byte[] id_image = cursor.getBlob(13);
-
-               renti_model renti_model = new renti_model(first_name,last_name,gender,father_name,mobile,whatsapp_mobile,p_mobile,
+               //change
+              renti_model renti_model = new renti_model(first_name,last_name,gender,father_name,mobile,whatsapp_mobile,p_mobile,
                        occupation,permanent_add,working_add,pg_num,room_num,bed_num,id_image);
+
                renti_model_List.add(renti_model);
            }
            while (cursor.moveToNext());
